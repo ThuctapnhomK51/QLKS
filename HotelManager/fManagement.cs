@@ -63,8 +63,15 @@ namespace HotelManager
 
         private void titleSignUpRoom_Click(object sender, EventArgs e)
         {
-          
 
+            if (CheckAccess("fBookRoom"))
+            {
+                Hide();
+                fBookRoom f = new fBookRoom();
+                f.ShowDialog();
+                Show();
+            }
+            else MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

@@ -74,8 +74,14 @@
   <ItemGroup>
     <Compile Include="DAO\AccessDAO.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BookRoomDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomInfoDAO.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
+    <Compile Include="DAO\RoomTypeDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillDetails.cs" />
@@ -104,6 +110,30 @@
     <Compile Include="fAccess.Designer.cs">
       <DependentUpon>fAccess.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddRoom.Designer.cs">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookRoom.Designer.cs">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookRoomDetails.Designer.cs">
+      <DependentUpon>fBookRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChangeRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangeRoom.Designer.cs">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="fManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +152,18 @@
     <Compile Include="fProfile.Designer.cs">
       <DependentUpon>fProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="fReceiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReceiveRoom.Designer.cs">
+      <DependentUpon>fReceiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReceiveRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReceiveRoomDetails.Designer.cs">
+      <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAbout.resx">
@@ -129,6 +171,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAccess.resx">
       <DependentUpon>fAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddRoom.resx">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookRoom.resx">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookRoomDetails.resx">
+      <DependentUpon>fBookRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangeRoom.resx">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fManagement.resx">
       <DependentUpon>fManagement.cs</DependentUpon>
@@ -138,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fProfile.resx">
       <DependentUpon>fProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReceiveRoom.resx">
+      <DependentUpon>fReceiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReceiveRoomDetails.resx">
+      <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

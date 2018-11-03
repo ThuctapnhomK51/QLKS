@@ -160,3 +160,26 @@ F:\Desktop\UploadToGithub\QLKS\Source Code\HotelManager\bin\Debug\FlashControlV7
 F:\Desktop\UploadToGithub\QLKS\Source Code\HotelManager\obj\Debug\HotelManager.csproj.CopyComplete
 F:\Desktop\UploadToGithub\QLKS\Source Code\HotelManager\obj\Debug\HotelManager.exe
 F:\Desktop\UploadToGithub\QLKS\Source Code\HotelManager\obj\Debug\HotelManager.pdb
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.csprojAssemblyReference.cache
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.csproj.ResolveComReference.cache
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fAbout.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fAccess.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fAddRoom.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fBookRoom.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fBookRoomDetails.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fChangeRoom.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fManagement.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fLogin.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fProfile.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.Properties.Resources.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.csproj.GenerateResource.cache
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.csproj.CoreCompileInputs.cache
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.exe
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.pdb
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fReceiveRoom.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.fReceiveRoomDetails.resources
+F:\Desktop\UploadToGithub\QLKS\HotelManager\bin\Debug\HotelManager.exe.config
+F:\Desktop\UploadToGithub\QLKS\HotelManager\bin\Debug\HotelManager.exe
+F:\Desktop\UploadToGithub\QLKS\HotelManager\bin\Debug\HotelManager.pdb
+F:\Desktop\UploadToGithub\QLKS\HotelManager\bin\Debug\FlashControlV71.dll
+F:\Desktop\UploadToGithub\QLKS\HotelManager\obj\Debug\HotelManager.csproj.CopyComplete
