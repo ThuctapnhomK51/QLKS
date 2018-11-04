@@ -116,6 +116,18 @@
     <Compile Include="fAccess.Designer.cs">
       <DependentUpon>fAccess.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomer.Designer.cs">
+      <DependentUpon>fAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomerInfo.Designer.cs">
+      <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,18 @@
     <Compile Include="fAddServiceType.Designer.cs">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddStaff.Designer.cs">
+      <DependentUpon>fAddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddStaffType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddStaffType.Designer.cs">
+      <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </Compile>
     <Compile Include="fBookRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +175,12 @@
     </Compile>
     <Compile Include="fChangeRoom.Designer.cs">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCustomer.Designer.cs">
+      <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="fManagement.cs">
       <SubType>Form</SubType>
@@ -194,6 +224,12 @@
     <Compile Include="fServiceType.Designer.cs">
       <DependentUpon>fServiceType.cs</DependentUpon>
     </Compile>
+    <Compile Include="fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAbout.resx">
@@ -201,6 +237,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAccess.resx">
       <DependentUpon>fAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomer.resx">
+      <DependentUpon>fAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomerInfo.resx">
+      <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAddRoom.resx">
       <DependentUpon>fAddRoom.cs</DependentUpon>
@@ -211,6 +253,12 @@
     <EmbeddedResource Include="fAddServiceType.resx">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fAddStaff.resx">
+      <DependentUpon>fAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddStaffType.resx">
+      <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBookRoom.resx">
       <DependentUpon>fBookRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fChangeRoom.resx">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCustomer.resx">
+      <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fManagement.resx">
       <DependentUpon>fManagement.cs</DependentUpon>
@@ -240,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fServiceType.resx">
       <DependentUpon>fServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
