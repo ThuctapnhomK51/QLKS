@@ -81,13 +81,16 @@
     <Compile Include="DAO\CustomerTypeDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\ParameterDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
     <Compile Include="DAO\ReceiveRoomInfoDAO.cs" />
+    <Compile Include="DAO\ReportDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
     <Compile Include="DAO\ServiceDAO.cs" />
     <Compile Include="DAO\ServiceTypeDAO.cs" />
+    <Compile Include="DAO\StatusRoomDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillDetails.cs" />
@@ -146,10 +149,10 @@
     <Compile Include="fAddServiceType.Designer.cs">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddStaff.cs">
+    <Compile Include="Resources\fAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddStaff.Designer.cs">
+    <Compile Include="Resources\fAddStaff.Designer.cs">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="fAddStaffType.cs">
@@ -157,6 +160,12 @@
     </Compile>
     <Compile Include="fAddStaffType.Designer.cs">
       <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBill.Designer.cs">
+      <DependentUpon>fBill.cs</DependentUpon>
     </Compile>
     <Compile Include="fBookRoom.cs">
       <SubType>Form</SubType>
@@ -194,6 +203,12 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPrintBill.Designer.cs">
+      <DependentUpon>fPrintBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="fProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +245,12 @@
     <Compile Include="fStaff.Designer.cs">
       <DependentUpon>fStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="fUseService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUseService.Designer.cs">
+      <DependentUpon>fUseService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAbout.resx">
@@ -253,11 +274,14 @@
     <EmbeddedResource Include="fAddServiceType.resx">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddStaff.resx">
+    <EmbeddedResource Include="Resources\fAddStaff.resx">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAddStaffType.resx">
       <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBill.resx">
+      <DependentUpon>fBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fBookRoom.resx">
       <DependentUpon>fBookRoom.cs</DependentUpon>
@@ -277,6 +301,9 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fPrintBill.resx">
+      <DependentUpon>fPrintBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fProfile.resx">
       <DependentUpon>fProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fStaff.resx">
       <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUseService.resx">
+      <DependentUpon>fUseService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
