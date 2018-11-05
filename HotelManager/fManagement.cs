@@ -63,7 +63,6 @@ namespace HotelManager
 
         private void titleSignUpRoom_Click(object sender, EventArgs e)
         {
-
             if (CheckAccess("fBookRoom"))
             {
                 Hide();
@@ -72,6 +71,7 @@ namespace HotelManager
                 Show();
             }
             else MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -84,12 +84,22 @@ namespace HotelManager
 
         private void titleRecieveRoom_Click(object sender, EventArgs e)
         {
-           
+            if (CheckAccess("fReceiveRoom"))
+            {
+                this.Hide();
+                fReceiveRoom f = new fReceiveRoom();
+                f.ShowDialog();
+                this.Show();
+            }
+            else MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void titleSendRoom_Click(object sender, EventArgs e)
         {
-          
+            this.Hide();
+            fUseService f = new fUseService(userName);
+            f.ShowDialog();
+            this.Show();
         }
 
         private void titlePay_Click(object sender, EventArgs e)
@@ -103,12 +113,20 @@ namespace HotelManager
             }
             else MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-
         }
 
         private void titleManageRoom_Click(object sender, EventArgs e)
         {
-          
+            if (CheckAccess("froom"))
+            {
+                this.Hide();
+                fRoom fProfile = new fRoom();
+                fProfile.ShowDialog();
+                this.Show();
+            }
+            else
+                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
 
         }
         private void btnAccountProfile_Click(object sender, EventArgs e)
@@ -129,13 +147,21 @@ namespace HotelManager
                 this.Show();
             }
             else
-                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+              MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+           
         }
 
         private void metroTile13_Click(object sender, EventArgs e)
         {
-           
+            if (CheckAccess("fparameter"))
+            {
+                this.Hide();
+                fParameter parameter = new fParameter();
+                parameter.ShowDialog();
+                this.Show();
+            }
+            else
+                MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void metroTile8_Click(object sender, EventArgs e)
@@ -148,11 +174,11 @@ namespace HotelManager
                 this.Show();
             }
             else
-                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
-        {
+        { 
             if (CheckAccess("fservice"))
             {
                 this.Hide();
@@ -161,7 +187,7 @@ namespace HotelManager
                 this.Show();
             }
             else
-                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnIntroduce_Click(object sender, EventArgs e)
@@ -174,7 +200,15 @@ namespace HotelManager
 
         private void title_Click(object sender, EventArgs e)
         {
-           
+            if(CheckAccess("freport"))
+            {
+                this.Hide();
+                fReport fAbout = new fReport();
+                fAbout.ShowDialog();
+                this.Show();
+            }
+            else
+              MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
           
         }
 
@@ -188,8 +222,7 @@ namespace HotelManager
                 this.Show();
             }
             else
-                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void panelRight_Paint(object sender, PaintEventArgs e)

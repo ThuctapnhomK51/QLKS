@@ -149,6 +149,30 @@
     <Compile Include="fAddServiceType.Designer.cs">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </Compile>
+    <Compile Include="fParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fParameter.Designer.cs">
+      <DependentUpon>fParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRoom.Designer.cs">
+      <DependentUpon>fRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRoomType.Designer.cs">
+      <DependentUpon>fRoomType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resources\fAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +297,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAddServiceType.resx">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fParameter.resx">
+      <DependentUpon>fParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRoom.resx">
+      <DependentUpon>fRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRoomType.resx">
+      <DependentUpon>fRoomType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\fAddStaff.resx">
       <DependentUpon>fAddStaff.cs</DependentUpon>
