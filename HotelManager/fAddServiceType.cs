@@ -26,26 +26,26 @@ namespace HotelManager
         }
         private void InsertServiceType()
         {
-            //if (fCustomer.CheckFillInText(new Control[] { txbName }))
-            //{
-            //    try
-            //    {
-            //        ServiceType serviceTypeNow = GetServiceTypeNow();
-            //        if (ServiceTypeDAO.Instance.InsertServiceType(serviceTypeNow))
-            //        {
-            //            MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            txbName.Text = string.Empty;
-            //        }
-            //        else
-            //            MessageBox.Show("Lỗi nhập dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //    catch
-            //    {
-            //        MessageBox.Show("Lỗi loại dịch vụ đã có", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //    MessageBox.Show("Không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (fCustomer.CheckFillInText(new Control[] { txbName }))
+            {
+                try
+                {
+                    ServiceType serviceTypeNow = GetServiceTypeNow();
+                    if (ServiceTypeDAO.Instance.InsertServiceType(serviceTypeNow))
+                    {
+                        MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txbName.Text = string.Empty;
+                    }
+                    else
+                        MessageBox.Show("Lỗi nhập dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi loại dịch vụ đã có", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+                MessageBox.Show("Không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)

@@ -98,27 +98,27 @@ namespace HotelManager
         }
         private void InsertService()
         {
-            //if (!fCustomer.CheckFillInText(new Control[] { txbName, comboBoxServiceType, txbPrice }))
-            //{
-            //    DialogResult result = MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //try
-            //{
-            //    Service serviceNow = GetServiceNow();
-            //    if (ServiceDAO.Instance.InsertService(serviceNow))
-            //    {
-            //        MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        txbName.Text = string.Empty;
-            //        txbPrice.Text = IntToString("100000");                
-            //    }
-            //    else
-            //        MessageBox.Show("Dịch vụ đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (!fCustomer.CheckFillInText(new Control[] { txbName, comboBoxServiceType, txbPrice }))
+            {
+                DialogResult result = MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                Service serviceNow = GetServiceNow();
+                if (ServiceDAO.Instance.InsertService(serviceNow))
+                {
+                    MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txbName.Text = string.Empty;
+                    txbPrice.Text = IntToString("100000");
+                }
+                else
+                    MessageBox.Show("Dịch vụ đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
