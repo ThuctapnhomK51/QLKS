@@ -72,7 +72,7 @@ Bạn có câu hỏi hoặc vấn đề với dự án? [Đặt câu hỏi](http
 
 * `Đặt dịch vụ và thanh toán`
 
-![Đặt dịch vụ và thanh toán](dichvu-thanhtoan.png)
+![Đặt dịch vụ và thanh toán](/images/dichvu-thanhtoan.png)
 
 * `Quản lý nhân viên`
 
