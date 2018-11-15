@@ -48,10 +48,9 @@
             this.panelLeft = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnNavigationPanel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccountProfile = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnHelp = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnIntroduce = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panelLeft.SuspendLayout();
@@ -319,10 +318,9 @@
             // 
             this.panelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLeft.BackgroundImage")));
             this.panelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLeft.Controls.Add(this.btnLogOut);
             this.panelLeft.Controls.Add(this.btnNavigationPanel);
             this.panelLeft.Controls.Add(this.btnAccountProfile);
-            this.panelLeft.Controls.Add(this.btnLogOut);
-            this.panelLeft.Controls.Add(this.btnHelp);
             this.panelLeft.Controls.Add(this.btnIntroduce);
             this.panelLeft.Controls.Add(this.bunifuFlatButton1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -392,7 +390,7 @@
             this.btnAccountProfile.IconVisible = true;
             this.btnAccountProfile.IconZoom = 50D;
             this.btnAccountProfile.IsTab = false;
-            this.btnAccountProfile.Location = new System.Drawing.Point(0, 405);
+            this.btnAccountProfile.Location = new System.Drawing.Point(3, 451);
             this.btnAccountProfile.Name = "btnAccountProfile";
             this.btnAccountProfile.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAccountProfile.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -405,77 +403,6 @@
             this.btnAccountProfile.Textcolor = System.Drawing.Color.White;
             this.btnAccountProfile.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountProfile.Click += new System.EventHandler(this.btnAccountProfile_Click);
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Activecolor = System.Drawing.Color.SeaGreen;
-            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogOut.BorderRadius = 0;
-            this.btnLogOut.ButtonText = "    Đăng Xuất";
-            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogOut.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogOut.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogOut.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Iconimage")));
-            this.btnLogOut.Iconimage_right = null;
-            this.btnLogOut.Iconimage_right_Selected = null;
-            this.btnLogOut.Iconimage_Selected = null;
-            this.btnLogOut.IconMarginLeft = 0;
-            this.btnLogOut.IconMarginRight = 0;
-            this.btnLogOut.IconRightVisible = true;
-            this.btnLogOut.IconRightZoom = 0D;
-            this.btnLogOut.IconVisible = true;
-            this.btnLogOut.IconZoom = 50D;
-            this.btnLogOut.IsTab = false;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 451);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogOut.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogOut.selected = false;
-            this.btnLogOut.Size = new System.Drawing.Size(177, 40);
-            this.btnLogOut.TabIndex = 4;
-            this.btnLogOut.Text = "    Đăng Xuất";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Textcolor = System.Drawing.Color.White;
-            this.btnLogOut.TextFont = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Activecolor = System.Drawing.Color.SeaGreen;
-            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHelp.BorderRadius = 0;
-            this.btnHelp.ButtonText = "    Trợ Giúp";
-            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelp.DisabledColor = System.Drawing.Color.Gray;
-            this.btnHelp.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnHelp.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHelp.Iconimage")));
-            this.btnHelp.Iconimage_right = null;
-            this.btnHelp.Iconimage_right_Selected = null;
-            this.btnHelp.Iconimage_Selected = null;
-            this.btnHelp.IconMarginLeft = 0;
-            this.btnHelp.IconMarginRight = 0;
-            this.btnHelp.IconRightVisible = true;
-            this.btnHelp.IconRightZoom = 0D;
-            this.btnHelp.IconVisible = true;
-            this.btnHelp.IconZoom = 50D;
-            this.btnHelp.IsTab = false;
-            this.btnHelp.Location = new System.Drawing.Point(0, 497);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnHelp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnHelp.selected = false;
-            this.btnHelp.Size = new System.Drawing.Size(177, 40);
-            this.btnHelp.TabIndex = 3;
-            this.btnHelp.Text = "    Trợ Giúp";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Textcolor = System.Drawing.Color.White;
-            this.btnHelp.TextFont = new System.Drawing.Font("Segoe UI", 9.75F);
             // 
             // btnIntroduce
             // 
@@ -547,6 +474,41 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Activecolor = System.Drawing.Color.SeaGreen;
+            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogOut.BorderRadius = 0;
+            this.btnLogOut.ButtonText = "    Đăng Xuất";
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLogOut.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLogOut.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Iconimage")));
+            this.btnLogOut.Iconimage_right = null;
+            this.btnLogOut.Iconimage_right_Selected = null;
+            this.btnLogOut.Iconimage_Selected = null;
+            this.btnLogOut.IconMarginLeft = 0;
+            this.btnLogOut.IconMarginRight = 0;
+            this.btnLogOut.IconRightVisible = true;
+            this.btnLogOut.IconRightZoom = 0D;
+            this.btnLogOut.IconVisible = true;
+            this.btnLogOut.IconZoom = 50D;
+            this.btnLogOut.IsTab = false;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 497);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnLogOut.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnLogOut.selected = false;
+            this.btnLogOut.Size = new System.Drawing.Size(177, 40);
+            this.btnLogOut.TabIndex = 7;
+            this.btnLogOut.Text = "    Đăng Xuất";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Textcolor = System.Drawing.Color.White;
+            this.btnLogOut.TextFont = new System.Drawing.Font("Segoe UI", 9.75F);
+            // 
             // fManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,10 +550,9 @@
         private MetroFramework.Controls.MetroTile metroTile17;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnAccountProfile;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogOut;
-        private Bunifu.Framework.UI.BunifuFlatButton btnHelp;
         private Bunifu.Framework.UI.BunifuFlatButton btnIntroduce;
         private Bunifu.Framework.UI.BunifuFlatButton btnNavigationPanel;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLogOut;
     }
 }
