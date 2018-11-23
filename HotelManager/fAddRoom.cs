@@ -39,35 +39,35 @@ namespace HotelManager
         private Room GetRoomNow()
         {
             Room room = new Room();
-            //fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] { txbNameRoom });
-            //room.Name = txbNameRoom.Text;
-            //int index = comboBoxRoomType.SelectedIndex;
-            //room.IdStatusRoom = 1;
-            //room.IdRoomType = (int)((DataTable)comboBoxRoomType.DataSource).Rows[index]["id"];
+            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] { txbNameRoom });
+            room.Name = txbNameRoom.Text;
+            int index = comboBoxRoomType.SelectedIndex;
+            room.IdStatusRoom = 1;
+            room.IdRoomType = (int)((DataTable)comboBoxRoomType.DataSource).Rows[index]["id"];
             return room;
         }
         private void InsertRoom()
         {
-            //if (!fCustomer.CheckFillInText(new Control[] { txbNameRoom, comboBoxRoomType }))
-            //{
-            //    MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //try
-            //{
-            //    Room roomNow = GetRoomNow();
-            //    if (RoomDAO.Instance.InsertRoom(roomNow))
-            //    {
-            //        txbNameRoom.Text = string.Empty;
-            //        MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    }
-            //    else
-            //        MessageBox.Show("Phòng này đã tồn tại(Trùng mã số phòng)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Lỗi không thêm được phòng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (!fCustomer.CheckFillInText(new Control[] { txbNameRoom, comboBoxRoomType }))
+            {
+                MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                Room roomNow = GetRoomNow();
+                if (RoomDAO.Instance.InsertRoom(roomNow))
+                {
+                    txbNameRoom.Text = string.Empty;
+                    MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                    MessageBox.Show("Phòng này đã tồn tại(Trùng mã số phòng)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi không thêm được phòng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {

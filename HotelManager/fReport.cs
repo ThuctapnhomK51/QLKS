@@ -24,7 +24,7 @@ namespace HotelManager
             this.year = year;
             DataTable table = GetFulReport(month, year);
             BindingSource source = new BindingSource();
-            ChangePrice(table);
+            //ChangePrice(table);
             source.DataSource = table;
             dataGridReport.DataSource = source;
             bindingReport.BindingSource = source;
